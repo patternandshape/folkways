@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+button {
+  width: 30px;
+  height: 30px;
+  background: black;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  font-weight: lighter;
+}
+
+.add-button {
+  float: right;
+}
+
+.release-button {
+  width: 70px;
+  height: 70px;
+  background: black;
+  color: white;
+  border-radius: 35px;
+  border: none;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  font-size: .9em;
+  text-transform: uppercase;
+  &:hover {
+    background: red;
+  }
+}

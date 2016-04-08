@@ -1,53 +1,39 @@
 # Folkways
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Folkways is a site where users can rate their favorite albums from the Smithsonian Folkways archive.
 
-## Prerequisites
+April 8, 2016
 
-You will need the following things properly installed on your computer.
+##### By Molly Curtin
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+### Description
+
+Folkways is an app where a user can rate their favorite releases on the label, create a collection of their favorites and add releases to the site.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
+* `git clone https://github.com/patternandshape/folkways.git`
+*   change into the new directory
 * `npm install`
 * `bower install`
-
-## Running / Development
-
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+### Technologies Used
 
-Make use of the many generators for code, try `ember help generate` for more details
+* Ember
+* Handlebars
+* NPM
+* Node
+* Bower
+* HTML
+* SCSS
+* Git
+* Google Fonts
+* Font Awesome
 
-### Running Tests
+##### License
 
-* `ember test`
-* `ember test --server`
+*This software is licensed under the MIT license.*
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+&copy; 2016 **Molly Curtin**

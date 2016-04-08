@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'folkways',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://folkways.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -14,10 +16,19 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
-    }
-  };
+          // Here you can pass flags/options to your application instance
+          // when it is created
+        },
+        contentSecurityPolicy: {
+          'default-src': "'none'",
+          'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com",
+          'font-src': "'self'",
+          'connect-src': "'self' wss://*.firebaseio.com",
+          'img-src': "'self' *",
+          'style-src': "'self' 'unsafe-inline'",
+          'frame-src': "'self' https://*.firebaseio.com"
+        }
+      };
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

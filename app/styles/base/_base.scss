@@ -1,0 +1,165 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: lighten(goldenrod, 10%);
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 3em;
+  h2 {
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-size: 1.5em;
+    color: darken(goldenrod,10%);
+  }
+}
+
+.thumbnail {
+  width: 325px;
+  height: 325px;
+  background-size: cover;
+  display: block;
+  margin-top: 10px;
+  -webkit-box-shadow: 9px 8px 17px -6px rgba(0,0,0,0.20);
+  -moz-box-shadow: 9px 8px 17px -6px rgba(0,0,0,0.20);
+  box-shadow: 9px 8px 17px -6px rgba(0,0,0,0.20);
+}
+
+.release {
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 35px 60px;
+  p {
+    width: 325px;
+  }
+}
+
+.release-title {
+  display: flex;
+  align-items: baseline;
+  width: 325px;
+}
+
+.my-collection {
+  margin-top: 3em;
+}
+
+.lg-image {
+  width: 500px;
+}
+
+.release-page {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  p {
+    width: 500px;
+    margin-top: 20px;
+    b {
+      letter-spacing: 0.1em;
+      font-size: 1.7em;
+    }
+  }
+}
+
+.description {
+  line-height: 2em;
+}
+
+.release-page-title {
+  width: 500px;
+  font-size: 1.7em;
+  text-align: center;
+  .release-artist {
+    color: white;
+    font-size: .8em;
+    font-weight: lighter;
+    line-height: 0.1em;
+  }
+}
+
+/**
+ * Basic styles for links
+ */
+
+a {
+  text-decoration: none;
+  h1 {
+    color: white;
+    &:hover {
+    color: lighten(red, 30%);
+    }
+  }
+}
+
+//form styling
+
+.form-style {
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  font-family: 'Arvo', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 100px;
+  label {
+    font-size: .9em;
+    margin-bottom: 10px;
+    font-weight: lighter;
+  }
+  input {
+    width: 550px;
+    margin-bottom: 20px;
+    height: 2.5em;
+    font-size: 1em;
+    letter-spacing: normal;
+    border: none;
+    border-radius: 2px;
+  }
+  button {
+    margin-top: 3em;
+    align-self: center;
+  }
+}
+
+textarea {
+  width: 550px;
+  font-family: 'Arvo', serif;
+  height: 9em;
+  border: none;
+}

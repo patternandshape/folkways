@@ -1,0 +1,27 @@
+/**
+ * Basic typography style for copy text
+ */
+
+h1 {
+  font-family: 'Bevan', cursive;
+  font-weight: lighter;
+  font-size: 5.5em;
+  letter-spacing: .18em;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-family: 'Arvo', serif;
+  font-size: .85em;
+}
+.release-name {
+  font-size: 1em;
+  height: 20px;
+  a {
+    color: black;
+    &:hover {
+      color: red;
+    }
+  }
+}

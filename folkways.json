@@ -1,0 +1,33 @@
+{ "releases": [{
+    "id": 0,
+    "artist": "Barton and Priscilla McLean",
+    "title": "McLean: Electro-Symphonic Landscapes",
+    "year": "1979",
+    "image": "http://40.media.tumblr.com/b8f779918b633c486af5f9cce477f858/tumblr_mwaq5mxY6f1qz91xlo1_1280.jpg",
+    "description": "This 1979 album, by the husband and wife composing-performing electronic music duo of Priscilla and Barton McLean, showcases two pieces, “Invisible Chariots” by Priscilla and “Song of the Nahuatl” by Barton. Begun in 1975 and completed in 1977, “Invisible Chariots” is a three-movement piece, named after a Carl Sandburg poem, about the “intuitive creative force” that shapes composition. Composed in 1976, “Song of the Nahuatl” was underwritten by a grant from the National Endowment for the Arts. The piece explores “the philosophical question of Man’s role in the natural world and universe.” Liner notes contain the composers’ notes on the pieces and brief biographies, as well as photographs of the McLeans performing."
+  },
+    {
+    "id": 1,
+    "artist": "Doris Jones",
+    "title": "Children's Activities to Music",
+    "year": "1976",
+    "image": "http://36.media.tumblr.com/c5c24f6d685882a8e2a2a3045f209322/tumblr_mwapffF9zw1qz91xlo1_1280.jpg",
+    "description": "This recording by music teacher Doris Jones is designed to provide assistance to teachers and to engage young children (kindergarten through third grade) in music and movement. The collection includes a series of activities that begin and end with a march (“Kindergarten March”) and involve the children galloping like a pony, hopping like a rabbit, walking like an elephant, and flying like a plane. None of the activities, except one, extend beyond two minutes."
+  },
+    {
+    "id": 2,
+    "artist": "Various Artists",
+    "title": "Music from Saramaka: A Dynamic Afro-American Tradition",
+    "year": "1977",
+    "image": "http://36.media.tumblr.com/5db0cac9d751fdb7cda5edfda06fc5a1/tumblr_mwarf1mtP01qz91xlo1_1280.jpg",
+    "description": "Retreating to the inland forests of Suriname to escape harsh conditions on slave plantations, small communities were founded upon diverse African heritages and newly emerging cultural practices. The Saramaka, who eventually became one of the largest Maroon (runaway slave) groups of this area, have a musical repertoire that employs a multitude of languages, gourd instruments, hand pianos, and drums. In this collection of music recorded from 1967 to 1976 by Richard and Sally Price, the songs of the Saramaka people convey a narrative of struggle, determination, and cultural survival. Liner notes include musical analysis, lyrics and translations, and photographs of the artists and instruments."
+  },
+    {
+    "id": 3,
+    "artist": "Various Artists",
+    "title": "A Reading of Primitive and Archaic Poetry",
+    "year": "1968",
+    "image": "http://40.media.tumblr.com/0085ff98dcb25521f37bcf96886c23cb/tumblr_mwapfvqocn1qz91xlo1_1280.jpg",
+    "description": "Reading of Primitive and Archaic Poetry: Arranged by Jerome Rothenberg"
+  }]
+}

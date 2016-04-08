@@ -1,3 +1,17 @@
-<h2 id="title">Welcome to Ember</h2>
+<header>
+  <img class="logo" src="https://patternandshape.files.wordpress.com/2016/04/smithsonian-logo.png">{{#link-to 'index'}}<h1 id="title">FOLKWAYS</h1>{{/link-to}}
+</header>
 
-{{outlet}}
+<div class="favorites">
+  <!-- {{#link-to 'add-release'}} -->
+  <i class="fa fa-plus"></i>
+  <!-- {{/link-to}}
+  {{#link-to 'collection'}} -->
+  <i class="fa fa-archive"></i>
+  <!-- {{/link-to}} -->
+</div>
+
+
+<div class="wrapper">
+  {{outlet}}
+</div>
