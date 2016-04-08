@@ -10,9 +10,17 @@ button {
   border-radius: 15px;
   border: none;
   font-weight: lighter;
+  &:hover {
+    background: red;
+  }
 }
 
 .add-button {
+  float: right;
+  margin-top: 15px;
+}
+
+.index-add-button {
   float: right;
 }
 
