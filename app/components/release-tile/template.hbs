@@ -1,0 +1,12 @@
+<div class="release">
+    <p class="release-name">
+      {{#link-to 'release' release.id}}{{release.title}}{{/link-to}}
+    </p>
+
+    {{#link-to 'release' release.id}}
+
+    <div class="thumbnail" style="background-image: url({{release.image}});"></div>
+
+    {{/link-to}}
+    <p>{{release.artist}}<button class="add-button" {{action 'addToCollection' release}}> + </button><br>{{release.year}}</p>
+</div>

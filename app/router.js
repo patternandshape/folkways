@@ -6,6 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('release', {path: '/release/:release_id'});
 });
 
 export default Router;

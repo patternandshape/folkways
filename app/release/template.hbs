@@ -1,0 +1,12 @@
+<div class="release-page">
+  <p class="release-page-title">
+    <h2 class="release-artist">{{model.artist}}</h2>
+    <h3>{{model.title}}</h3>
+  </p>
+  <img class="lg-image" src={{model.image}}>
+  <p><b>{{model.year}}</b><button class="add-button" {{action 'addToCollection' release}}> + </button>
+  </p>
+  <p class="description">
+    {{model.description}}
+  </p>
+</div>
