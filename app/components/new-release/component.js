@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   addNewRelease: false,
-  
+
   actions: {
     releaseFormShow() {
       this.set('addNewRelease', true);
@@ -16,11 +16,11 @@ export default Ember.Component.extend({
         description: this.get('description'),
       };
       this.set('addNewRelease', false);
-      this.set('artist', "");
-      this.set('title', "");
-      this.set('year', "");
-      this.set('image', "");
-      this.set('description', "");
+      // this.set('artist', "");
+      // this.set('title', "");
+      // this.set('year', "");
+      // this.set('image', "");
+      // this.set('description', "");
       this.sendAction('save2', params);
     }
   }

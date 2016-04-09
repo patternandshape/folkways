@@ -1,23 +1,25 @@
 {{#if 'addNewRelease'}}
   <h2>New Release:</h2>
-  <form class ="form-style">
-    <label for="artist">Artist:</label>
-    {{input value=artist id="artist"}}
+  <div>
+    <form class ="form-style">
+      <label for="artist">Artist:</label>
+      {{input value=artist id="artist"}}
 
-    <label for="title">Album Title:</label>
-    {{input value=title id="title"}}
+      <label for="title">Album Title:</label>
+      {{input value=title id="title"}}
 
-    <label for="year">Year:</label>
-    {{input value=year id="year"}}
+      <label for="year">Year:</label>
+      {{input value=year id="year"}}
 
-    <label for="image">Image URL:</label>
-    {{input value=image id="image"}}
+      <label for="image">Image URL:</label>
+      {{input value=image id="image"}}
 
-    <label for="description">Description:</label>
-    {{textarea value=description id="description"}}
+      <label for="description">Description:</label>
+      {{textarea value=description id="description"}}
 
-    <button class="release-button" {{action 'save1'}}>Save</button>
-  </form>
+      <button class="release-button" {{action 'save1'}}>Save</button>
+    </form>
+  </div>
 {{else}}
   <button {{action 'releaseFormShow'}}>Add Release</button>
 {{/if}}
