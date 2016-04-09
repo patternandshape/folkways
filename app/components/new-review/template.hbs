@@ -10,7 +10,7 @@
 
           <div class="form-group">
             <label for="rating">Your Rating:</label>
-            {{input value=rating class="rating"}}
+            {{input value=number min=0 max=5 class="rating"}}
           </div>
 
           <div class="form-group">
@@ -18,7 +18,7 @@
             {{textarea value=body class="body"}}
           </div>
 
-          <button class="post-review" {{action 'saveReview1' review}}>Post</button>
+          <button class="post-review" {{action 'saveReview1'}}>Post</button>
         </form>
       </div>
   </div>
