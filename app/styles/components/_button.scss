@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 
 button {
+  font-family: 'Arvo', serif;
   width: 30px;
   height: 30px;
   background: black;
@@ -16,16 +17,19 @@ button {
 }
 
 .add-button {
+  font-family: 'Arvo', serif;
   float: right;
   margin-top: 15px;
   font-size: 18px;
 }
 
 .index-add-button {
+  font-family: 'Arvo', serif;
   float: right;
 }
 
 .release-button {
+  font-family: 'Arvo', serif;
   width: 70px;
   height: 70px;
   background: black;
@@ -35,6 +39,26 @@ button {
   font-weight: lighter;
   letter-spacing: 0.1em;
   font-size: .9em;
+  text-transform: uppercase;
+  &:hover {
+    background: red;
+  }
+}
+
+.post-review {
+  margin: auto;
+  font-family: 'Arvo', serif;
+  margin-top: 40px;
+  width: 100px;
+  height: 100px;
+  background: black;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  font-size: 13px;
+  line-height: 1.5em;
   text-transform: uppercase;
   &:hover {
     background: red;

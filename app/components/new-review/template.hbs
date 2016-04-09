@@ -1,1 +1,27 @@
-{{yield}}
+{{#if newReview}}
+  <div class="form-style">
+    <h2>YOUR FEEDBACK</h2>
+      <div>
+        <form>
+          <div class="form-group">
+            <label for="author">Name:</label>
+            {{input value=author}}
+          </div>
+
+          <div class="form-group">
+            <label for="rating">Your Rating:</label>
+            {{input value=rating}}
+          </div>
+
+          <div class="form-group">
+            <label for="body">Review:</label>
+            {{input value=body}}
+          </div>
+
+          <button class="post-review" {{action 'saveReview1' review}}>Post</button>
+        </form>
+      </div>
+  </div>
+{{else}}
+  <button class="post-review" {{action 'reviewFormShow'}}>Add Review</button>
+{{/if}}

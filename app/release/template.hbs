@@ -9,4 +9,16 @@
   <p class="description">
     {{model.description}}
   </p>
+
+  <div class="new-review">
+    {{new-review release=model saveReview2="saveReview3"}}
+  </div>
+  <ul>
+    {{#each model.reviews as |review|}}
+      <h4>Review from {{review.author}}</h4>
+      <p>{{release.review.date}}</p>
+      <p>{{release.review.rating}}</p>
+      <p>{{release.review.body}}</p>
+    {{/each}}
+  </ul>
 </div>
