@@ -1,21 +1,21 @@
 {{#if addNewReview}}
   <div class="form-style">
-    <h2>YOUR FEEDBACK</h2>
+    <h2>Your Review</h2>
       <div>
         <form>
           <div class="form-group">
             <label for="author">Name:</label>
-            {{input value=author}}
+            {{input value=author class="author"}}
           </div>
 
           <div class="form-group">
             <label for="rating">Your Rating:</label>
-            {{input value=rating}}
+            {{input value=rating class="rating"}}
           </div>
 
           <div class="form-group">
             <label for="body">Review:</label>
-            {{input value=body}}
+            {{textarea value=body class="body"}}
           </div>
 
           <button class="post-review" {{action 'saveReview1' review}}>Post</button>

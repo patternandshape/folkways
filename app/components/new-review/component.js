@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     saveReview1() {
       var params = {
         author: this.get('author'),
-        date: Date(),
+        date_added: Date.now(),
         rating: this.get('rating'),
         body: this.get('body'),
         review: this.get('review')
