@@ -1,38 +1,25 @@
 {{#if addNewReview}}
-  <div class="form-style">
-    <h2>Your Review</h2>
-      <div>
-        <form>
+    <h2>YOUR REVIEW</h2>
+    <form class ="form-style review-form">
 
-          <div class="form-group">
-            <label for="firstName">First name:</label>
-            {{input value=firstName class="firstName"}}
-          </div>
+      <label for="firstName">First name:</label>
+      {{input value=firstName}}
 
-          <div class="form-group">
-            <label for="lastName"> Surname:</label>
-            {{input value=lastName class="lastName"}}
-          </div>
+      <label for="lastName"> Surname:</label>
+      {{input value=lastName}}
 
-          <div class="form-group">
-            <label for="date">Date:</label>
-            {{input type="date" name="date"}}
-          </div>
+      <label for="date">Date:</label>
+      {{input type="date"}}
 
-          <div class="form-group">
-            <label for="username">Rating (1-10pts):</label>
-            {{input type="number" min=1 max=10 value=rating}}
-          </div>
+      <label for="username">Rating (1-10pts):</label>
+      {{input type="number" min=1 max=10 value=rating}}
 
-          <div class="form-group">
-            <label for="body">Review:</label>
-            {{textarea value=body class="body"}}
-          </div>
+      <label for="body">Review:</label>
+      {{textarea value=body}}
 
-          <button class="post-review" {{action 'saveReview1' review}}>Post</button>
-        </form>
-      </div>
-  </div>
-{{else}}
+      <button class="post-review" {{action 'saveReview1' review}}>Post</button>
+
+    </form>
+  {{else}}
   <button class="post-review" {{action 'reviewFormShow'}}>Add Review</button>
-{{/if}}
+  {{/if}}
