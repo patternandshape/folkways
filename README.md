@@ -8,7 +8,7 @@ April 8, 2016
 
 ### Description
 
-Folkways is an app where a user can rate their favorite releases on the label, create a collection of their favorites and add releases to the site.
+Folkways is an app where a user can review and rate their favorite releases on the label, create a collection of their favorites and add releases to the site.
 
 ## Installation
 
