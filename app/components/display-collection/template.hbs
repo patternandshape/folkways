@@ -1,11 +1,13 @@
 <h2>MY COLLECTION</h2>
+
 <div class="my-collection">
+
   {{#each myCollection.releases as |release|}}
-  <div class="release">
-      <p class="release-name">{{#link-to 'release' release.id}}{{release.title}}{{/link-to}}
-      </p>
+    <div class="release">
+      <p class="release-name">{{#link-to 'release' release.id}}{{release.title}}{{/link-to}}</p>
       {{#link-to 'release' release.id}}
       <div class="thumbnail" style="background-image: url({{release.image}});"></div>{{/link-to}}
-  </div>
+    </div>
   {{/each}}
+  
 </div>

@@ -1,25 +1,26 @@
 <div class="release-page">
+
   <p class="release-page-title">
     <h2 class="release-artist">{{model.artist}}</h2>
     <h3>{{model.title}}</h3>
   </p>
+
   <img class="lg-image" src={{model.image}}>
-  <p><b>{{model.year}}</b><button class="add-button" {{action 'addToCollection' release}}> + </button>
-  </p>
-  <p class="description">
-    {{model.description}}
-  </p>
+  <p><b>{{model.year}}</b><button class="add-button" {{action 'addToCollection' release}}> + </button></p>
+  <p class="description">{{model.description}}</p>
 
+  {{new-review saveReview2="saveReview3" release=model}}
 
-{{new-review saveReview2="saveReview3" release=model}}
   <div class="new-review">
     <ul>
       {{#each model.reviews as |review|}}
-        <li><h4>Review from {{review.firstName}} {{review.lastName}}{{review.fullName}}</h4>
-        <p>on {{review.date}}</p>
-        <p class="thumb">Rating: {{rating-divider review}}</p>
-        <p>{{review.body}}</p></li>
+        <li>
+          <h4>Review from {{review.firstName}} {{review.lastName}}{{fullName}}</h4>
+          <p>on {{review.date}}</p>
+          <p class="thumb">Rating: {{rating-divider review}}</p>
+          <p>{{review.body}}</p>
+        </li>
       {{/each}}
-  </ul>
-    </div>
+    </ul>
+  </div>
 </div>

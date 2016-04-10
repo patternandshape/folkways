@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   addNewReview: false,
+  
   actions: {
     reviewFormShow() {
       this.set('addNewReview', true);

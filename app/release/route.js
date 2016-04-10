@@ -12,7 +12,6 @@ export default Ember.Route.extend({
   myCollection: Ember.inject.service(),
 
   actions: {
-
     addToCollection(release) {
       this.get('myCollection').add(release);
     },
