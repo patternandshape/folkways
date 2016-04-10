@@ -23,6 +23,8 @@ Folkways is an app where a user can review and rate their favorite releases on t
 
 * Ember
 * Handlebars
+* Firebase
+* Moment JS
 * NPM
 * Node
 * Bower
