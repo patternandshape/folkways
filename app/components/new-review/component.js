@@ -2,7 +2,6 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   addNewReview: false,
-
   actions: {
     reviewFormShow() {
       this.set('addNewReview', true);
@@ -10,10 +9,10 @@ export default Ember.Component.extend({
     saveReview1() {
       var params = {
         author: this.get('author'),
-        date_added: Date.now(),
-        rating: this.get('rating'),
+        date: Date.now(),
+        // rating: this.get('rating'),
         body: this.get('body'),
-        review: this.get('review')
+        release: this.get('release')
       };
       this.set('addNewReview', false);
       this.sendAction('saveReview2', params);
