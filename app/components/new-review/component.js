@@ -9,19 +9,13 @@ export default Ember.Component.extend({
     saveReview1() {
       var params = {
         firstName: this.get('firstName'),
-        lastName: this.get('firstName'),
-        date: this.get('date'),
-        // date: Date.now(),
+        lastName: this.get('lastName'),
+        date: Date(),
         rating: parseInt(this.get('rating')),
         body: this.get('body'),
         release: this.get('release')
       };
       this.set('addNewReview', false);
-      this.set('firstName', "");
-      this.set('lastName', "");
-      this.set('date', "");
-      this.set('rating', "");
-      this.set('body', "");
       this.sendAction('saveReview2', params);
     }
   }

@@ -15,7 +15,7 @@
   </div>
   <ul>
     {{#each model.reviews as |review|}}
-      <h4>Review from {{review.firstName}}{{review.lastName}}</h4>
+      <h4>Review from {{review.firstName}} {{review.lastName}}{{review.fullName}}</h4>
       <p>on {{review.date}}</p>
       <p>Rating: {{rating-divider review}}</p>
       <p>{{review.body}}</p>
