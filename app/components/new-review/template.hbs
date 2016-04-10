@@ -10,6 +10,11 @@
           </div>
 
           <div class="form-group">
+            <label for="username">Rating: </label>
+            {{input type="number" min=0 max=5 value=rating}}
+          </div>
+
+          <div class="form-group">
             <label for="body">Review:</label>
             {{textarea value=body class="body"}}
           </div>
