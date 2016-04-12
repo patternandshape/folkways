@@ -5,10 +5,6 @@ export default Ember.Route.extend({
     return this.store.findRecord('release', params.release_id);
   },
 
-  fullName: Ember.computed('review.firstName', 'review.lastName', function() {
-    return this.get('review.firstName') + ' ' + this.get('review.lastName');
-  }),
-
   myCollection: Ember.inject.service(),
 
   actions: {
