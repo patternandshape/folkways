@@ -169,28 +169,27 @@ textarea {
   border: none;
 }
 
-.review-form {
-}
-
 // review component
 
 .new-review {
-  margin-top: 2em;
-  width: 450px;
+  margin-top: 1.5em;
   h4 {
     color: darken(goldenrod,20%);
   }
   ul {
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    list-style:none;
+    padding-left:0;
     li {
-    background: lighten(goldenrod, 25%);
-    color: goldenrod;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    .thumb {
-      color: darken(goldenrod,20%);
-    }
+      width: 400px;
+      background: lighten(goldenrod, 25%);
+      color: goldenrod;
+      padding: 20px;
+      border-radius: 10px;
+      .thumb {
+        color: darken(goldenrod,20%);
+      }
     }
   }
 }
