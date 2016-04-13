@@ -1,5 +1,4 @@
 import Ember from 'ember';
-// import moment from 'moment';
 
 export default Ember.Component.extend({
   addNewReview: false,
@@ -12,8 +11,8 @@ export default Ember.Component.extend({
       var params = {
         firstName: this.get('firstName'),
         lastName: this.get('lastName'),
-        date: Date(),
-        // date: moment().format('MMMM Do YYYY, h:mm:ss a'),
+        // date: Date(),
+        date: moment().format('MMMM Do YYYY, h:mm:ss a'),
         rating: parseInt(this.get('rating')),
         body: this.get('body'),
         release: this.get('release')

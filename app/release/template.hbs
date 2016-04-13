@@ -6,7 +6,7 @@
   </p>
 
   <img class="lg-image" src={{model.image}}>
-  <p><b>{{model.year}}</b><button class="add-button" {{action 'addToCollection' release}}> + </button></p>
+  <p><b>{{model.year}}</b><button class="add-button" {{action 'addToCollection' model}}> + </button></p>
   <p class="description">{{model.description}}</p>
 
   {{new-review saveReview2="saveReview3" release=model}}
