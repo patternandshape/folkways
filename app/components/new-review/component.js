@@ -11,8 +11,7 @@ export default Ember.Component.extend({
       var params = {
         firstName: this.get('firstName'),
         lastName: this.get('lastName'),
-        // date: Date(),
-        date: moment().format('MMMM Do YYYY, h:mm:ss a'),
+        date: moment().format('MMMM Do YYYY, h:mm a'),
         rating: parseInt(this.get('rating')),
         body: this.get('body'),
         release: this.get('release')
