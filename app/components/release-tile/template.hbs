@@ -8,5 +8,7 @@
     <div class="thumbnail" style="background-image: url({{release.image}});"></div>
 
     {{/link-to}}
-    <p class="artist">{{release.artist}}<span class="many-comments">{{release-popularity release}}</span><button class="index-add-button" {{action 'addToCollection' release}}> + </button><br>{{release.year}}</p>
+    <p class="artist">{{release.artist}}
+      <div class="button-comments">
+        <span class="many-comments">{{release-popularity release}}</span><button class="index-add-button" {{action 'addToCollection' release}}> + </button></div><br>{{release.year}}</p>
 </div>

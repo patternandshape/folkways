@@ -16,6 +16,9 @@ button {
   }
 }
 
+.button-comments {
+  float: right;
+}
 .add-button {
   font-family: 'Arvo', serif;
   float: right;
@@ -25,7 +28,7 @@ button {
 
 .index-add-button {
   font-family: 'Arvo', serif;
-  float: right;
+  margin-left: 10px;
 }
 
 .release-button {
@@ -67,8 +70,25 @@ button {
 
 // icons
 
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(6deg);
+    }
+  50% {
+    -webkit-transform: rotate(-6deg);
+    }
+  100% {
+    -webkit-transform: rotate(6deg);
+    }
+  }
+
+  .logo {
+    &:hover{
+    -webkit-animation: wiggle 0.5s infinite;
+    }
+  }
+
 .many-comments {
-  margin-left: 190px;
   font-size: 1.5em;
   color: darken(goldenrod,20%);
 }
