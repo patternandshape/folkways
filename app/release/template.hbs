@@ -14,12 +14,7 @@
   <div class="new-review">
     <ul>
       {{#each model.reviews as |review|}}
-        <li>
-          <h4>Review from {{review.firstName}} {{review.lastName}}{{fullName}}</h4>
-          <p>on {{review.date}}</p>
-          <p class="thumb">Rating: {{rating-divider review}}</p>
-          <p>{{review.body}}</p>
-        </li>
+        {{review-tile review=review}}
       {{/each}}
     </ul>
   </div>
