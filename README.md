@@ -19,6 +19,8 @@ Folkways is an app where a user can review and rate their favorite releases on t
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
+Folkways can also be viewed at http://patternandshape.github.io/folkways
+
 ### Technologies Used
 
 * Ember
