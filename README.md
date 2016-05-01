@@ -30,9 +30,9 @@ Folkways can also be viewed at http://patternandshape.github.io/folkways
 * NPM
 * Node
 * Bower
+* Git
 * HTML
 * SCSS
-* Git
 * Google Fonts
 * Font Awesome
 
